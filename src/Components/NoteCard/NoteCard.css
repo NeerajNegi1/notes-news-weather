@@ -1,0 +1,26 @@
+.note_card{
+    margin: 10px;
+    padding: 1rem;
+    border: 2px solid grey;
+    width: fit-content;
+    word-break: break-all;
+    height: max-content;
+    word-wrap: break-word;
+    border: 5px;
+    box-shadow: 2px 2px 5px grey;
+}
+.note_card button{
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+.note_card button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

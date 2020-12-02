@@ -1,0 +1,52 @@
+.create_note_section{
+    text-align: center;
+}
+.text_area_style{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+}
+.text_area_style textarea{
+    align-self: center;
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 5rem;
+    resize: none;
+}
+.text_area_style input{
+    align-self: center;
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 1.5rem;
+}
+.text_area_style button{
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 2px;
+    text-align: center;
+    width: 5rem;
+    align-self: center;
+    padding: 0.5rem;
+    border-radius: 2px;
+    outline: none;
+}
+.text_area_style button:hover{
+    background-color: black;
+    color: white;
+}
+.notes_render_container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+}

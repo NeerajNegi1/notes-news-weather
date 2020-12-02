@@ -1,0 +1,14 @@
+.post{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.post img{
+    height: 25rem;
+    width: 100%;
+    align-self: center;
+    object-fit: cover;
+}
