@@ -7,7 +7,7 @@ export const NewsProvider = props => {
     const [news, setNews] = useState([]);
 
     useEffect(() => {
-        axios.get('https://gnews.io/api/v4/top-headlines?token=b6e530ffca218c5e6b842b8927c3f6f9').then((res) => {
+        axios.get('https://gnews.io/api/v4/top-headlines?token={API-Key}').then((res) => {
             console.log("res", res);
             setNews(res.data.articles);
             console.log(news);
@@ -47,7 +47,7 @@ export const WeatherProvider = props => {
                 longitude = position.coords.longitude;
                 lat = Math.trunc(latitude);
                 lon = Math.trunc(longitude);
-                axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=a3971676025ca82bde23f3c29c099bc4`)
+                axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid={API-Key}`)
                     .then(response => {
                         wheatherData.temp = response.data.main.temp;
                         wheatherData.humidity = response.data.main.humidity;
